@@ -290,24 +290,20 @@ screen navigation():
     vbox:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
-        yalign 0.5
-
         spacing gui.navigation_spacing
 
-        if main_menu:
+        if renpy.get_screen("main_menu"):
 
-            textbutton _("Start") action Start()
+            xalign gui.navigation_xpos
+            yalign 0.9
 
         else:
 
-            textbutton _("History") action ShowMenu("history")
+            xoffset 60
+            yalign 0.5
 
-            textbutton _("Save") action ShowMenu("save")
-
-        textbutton _("Load") action ShowMenu("load")
-
-        textbutton _("Preferences") action ShowMenu("preferences")
+        if main_menu:
+            textbutton _("Start") action Start()
 
         if _in_replay:
 
@@ -315,14 +311,27 @@ screen navigation():
 
         elif not main_menu:
 
-            textbutton _("Main Menu") action MainMenu()
+            textbutton _("Save") action ShowMenu("save")
 
-        textbutton _("About") action ShowMenu("about")
+
+        textbutton _("Load") action ShowMenu("load")
+
+        textbutton _("Preferences") action ShowMenu("preferences")
+
+
+        if not main_menu:
+            textbutton _("History") action ShowMenu("history")
+
+        textbutton _("About") action ShowMenu("about") 
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
             textbutton _("Help") action ShowMenu("help")
+
+        if not main_menu:
+
+            textbutton _("Main Menu") action MainMenu()
 
         if renpy.variant("pc"):
 
@@ -385,7 +394,7 @@ style main_menu_frame:
     xsize 420
     yfill True
 
-    background "gui/overlay/main_menu.png"
+    #background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0
@@ -414,6 +423,8 @@ style main_menu_version:
 ## transcluded (placed) inside it.
 
 screen game_menu(title, scroll=None, yinitial=0.0):
+
+    tag menu
 
     style_prefix "game_menu"
 
@@ -525,10 +536,11 @@ style game_menu_label_text:
     size gui.title_text_size
     color gui.accent_color
     yalign 0.5
+    xalign 0.1
 
 style return_button:
-    xpos gui.navigation_xpos
-    yalign 1.0
+    xalign 0.035
+    yalign 0.9
     yoffset -45
 
 
