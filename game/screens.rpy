@@ -540,7 +540,7 @@ style game_menu_label_text:
 
 style return_button:
     xalign 0.035
-    yalign 0.9
+    yalign 0.95
     yoffset -45
 
 
