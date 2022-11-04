@@ -1,28 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 158, in script
-    hide bg with fadeout
-  File "game/script.rpy", line 158, in <module>
-    hide bg with fadeout
-NameError: name 'fadeout' is not defined
+  File "game/scripts/manager.rpy", line 15, in script
+    if day == 1:
+SyntaxError: invalid syntax (game/scripts/manager.rpy, line 27)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 158, in script
-    hide bg with fadeout
-  File "C:\Users\alext\OneDrive - Universidade de Lisboa\Documentos\Programas\renpy-8.0.0-sdk\renpy\ast.py", line 1634, in execute
-    paired = renpy.python.py_eval(self.paired)
-  File "C:\Users\alext\OneDrive - Universidade de Lisboa\Documentos\Programas\renpy-8.0.0-sdk\renpy\python.py", line 1080, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\alext\OneDrive - Universidade de Lisboa\Documentos\Programas\renpy-8.0.0-sdk\renpy\python.py", line 1073, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 158, in <module>
-    hide bg with fadeout
-NameError: name 'fadeout' is not defined
+  File "game/scripts/manager.rpy", line 15, in script
+    if day == 1:
+  File "C:\Users\alext\OneDrive - Universidade de Lisboa\Documentos\Programas\renpy-8.0.0-sdk\renpy\ast.py", line 2095, in execute
+    if renpy.python.py_eval(condition):
+  File "C:\Users\alext\OneDrive - Universidade de Lisboa\Documentos\Programas\renpy-8.0.0-sdk\renpy\python.py", line 1078, in py_eval
+    code = py_compile(code, 'eval')
+  File "C:\Users\alext\OneDrive - Universidade de Lisboa\Documentos\Programas\renpy-8.0.0-sdk\renpy\python.py", line 1015, in py_compile
+    raise e
+  File "C:\Users\alext\OneDrive - Universidade de Lisboa\Documentos\Programas\renpy-8.0.0-sdk\renpy\python.py", line 967, in py_compile
+    raise orig_e
+  File "C:\Users\alext\OneDrive - Universidade de Lisboa\Documentos\Programas\renpy-8.0.0-sdk\renpy\python.py", line 960, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: invalid syntax (game/scripts/manager.rpy, line 27)
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.0.22062402
-Cozy Autumn Game Jam 
-Fri Sep 23 00:29:08 2022
+Treebulations 
+Fri Nov  4 17:54:27 2022
