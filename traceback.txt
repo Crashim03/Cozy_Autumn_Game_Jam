@@ -1,28 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/scripts/manager.rpy", line 15, in script
-    if day == 1:
-SyntaxError: invalid syntax (game/scripts/manager.rpy, line 27)
+  File "game/scripts/days/dayTransition.rpy", line 5, in script
+    with Fade(2.0, 2.0)
+TypeError: Fade() missing 1 required positional argument: 'in_time'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/scripts/manager.rpy", line 15, in script
-    if day == 1:
-  File "C:\Users\alext\OneDrive - Universidade de Lisboa\Documentos\Programas\renpy-8.0.0-sdk\renpy\ast.py", line 2095, in execute
-    if renpy.python.py_eval(condition):
-  File "C:\Users\alext\OneDrive - Universidade de Lisboa\Documentos\Programas\renpy-8.0.0-sdk\renpy\python.py", line 1078, in py_eval
-    code = py_compile(code, 'eval')
-  File "C:\Users\alext\OneDrive - Universidade de Lisboa\Documentos\Programas\renpy-8.0.0-sdk\renpy\python.py", line 1015, in py_compile
-    raise e
-  File "C:\Users\alext\OneDrive - Universidade de Lisboa\Documentos\Programas\renpy-8.0.0-sdk\renpy\python.py", line 967, in py_compile
-    raise orig_e
-  File "C:\Users\alext\OneDrive - Universidade de Lisboa\Documentos\Programas\renpy-8.0.0-sdk\renpy\python.py", line 960, in py_compile
-    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
-SyntaxError: invalid syntax (game/scripts/manager.rpy, line 27)
+  File "game/scripts/days/dayTransition.rpy", line 5, in script
+    with Fade(2.0, 2.0)
+  File "C:\Users\alext\OneDrive - Universidade de Lisboa\Documentos\Programas\renpy-8.0.0-sdk\renpy\ast.py", line 1638, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "C:\Users\alext\OneDrive - Universidade de Lisboa\Documentos\Programas\renpy-8.0.0-sdk\renpy\exports.py", line 1653, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\alext\OneDrive - Universidade de Lisboa\Documentos\Programas\renpy-8.0.0-sdk\renpy\display\core.py", line 2797, in do_with
+    return self.interact(trans_pause=True,
+  File "C:\Users\alext\OneDrive - Universidade de Lisboa\Documentos\Programas\renpy-8.0.0-sdk\renpy\display\core.py", line 3376, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs) # type: ignore
+  File "C:\Users\alext\OneDrive - Universidade de Lisboa\Documentos\Programas\renpy-8.0.0-sdk\renpy\display\core.py", line 3740, in interact_core
+    trans = self.ongoing_transition[None](
+TypeError: Fade() missing 1 required positional argument: 'in_time'
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.0.22062402
 Treebulations 
-Fri Nov  4 17:54:27 2022
+Sun Nov  6 14:32:07 2022
