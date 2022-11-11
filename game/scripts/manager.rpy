@@ -25,8 +25,13 @@ define K = Character("Kuin",
     what_color="#000000", 
     what_style="bubble_speech_text")
 
+define config.after_load_transition = Fade(0.5,   1, 0.5)
+define config.intra_transition      = Fade(0.2, 0.2, 0.2)
+define config.game_main_transition  = Fade(0.5,   1, 0.5)
+define config.end_game_transition   = Fade(0.5,   1, 0.5)
 
 label start:
+
 
     $ _game_menu_screen = "pause_menu"
     $ _main_menu_screen = "menu"

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 373: 'navigation' is not a keyword argument or valid child for the textbutton statement.
-    textbutton _("Start") action use navigation
-                                               ^
+File "game/screens.rpy", line 305: 'with' is not a keyword argument or valid child for the textbutton statement.
+    textbutton _("Start") action ShowMenu("menu") with fade
+                                                      ^
 
 Ren'Py Version: Ren'Py 8.0.0.22062402
-Fri Nov 11 19:27:16 2022
+Fri Nov 11 21:11:21 2022
