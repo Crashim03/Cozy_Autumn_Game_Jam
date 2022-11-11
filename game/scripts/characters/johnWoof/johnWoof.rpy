@@ -15,7 +15,7 @@
 
     "\"Here!\""
 
-    J "Thanks"
+    J "Thanks."
 
     "..."
 

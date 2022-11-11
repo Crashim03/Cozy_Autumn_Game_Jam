@@ -317,7 +317,7 @@ init python:
             # You could amend to pass others as args too
 
             kwargs['show_type'] = kwargs.get('show_type', "bubble_speech")
-            kwargs['show_xmax'] = kwargs.get('show_xmax', 320)
+            kwargs['show_xmax'] = kwargs.get('show_xmax', 500)
             #kwargs['show_xmin'] = kwargs.get('show_xmin', 0)
 
         kwargs['interact'] = kwargs.get('interact', True)
@@ -452,7 +452,6 @@ define speech_bubble_k = Character(
     screen="bubble_say", 
     who_color="#FDD", 
     what_style="bubble_speech_text")
-
     
 
 label speech_bubble_example:

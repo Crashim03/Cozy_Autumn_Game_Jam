@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/characters/kuin/kuin.rpy", line 93: expected menuitem
-    if kuinEnding == 1:
-    ^
+File "game/scripts/characters/kuin/kuinBadEnding.rpy", line 7: expected statement.
+    "You are not above being a petty bitch back so you decide why not instigate the sleeping bee."I
+                                                                                                   ^
 
 Ren'Py Version: Ren'Py 8.0.0.22062402
-Fri Nov 11 00:09:05 2022
+Fri Nov 11 14:26:05 2022

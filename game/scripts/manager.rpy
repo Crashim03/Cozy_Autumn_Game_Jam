@@ -1,9 +1,34 @@
 # Characters
 
-define F = Character("Croakney", color="#ffffff")
-define J = Character("John Woof", color="#ffffff")
-define R = Character("Ricardo", color="#ffffff")
-define QB = Character("Queen Bee", color="#ffffff")
+define F = Character("Croakney",
+    screen="bubble_say", 
+    what_color="#000000", 
+    what_style="bubble_speech_text",
+    show_tail="leftbase")
+
+define J = Character("John Woof",
+    screen="bubble_say", 
+    what_color="#000000", 
+    what_style="bubble_speech_text",
+    show_tail="leftbase")
+
+define R = Character("Ricardo",
+    screen="bubble_say", 
+    what_color="#000000", 
+    what_style="bubble_speech_text",
+    show_tail="leftbase")
+
+define QB = Character("Queen Bee",
+    screen="bubble_say", 
+    what_color="#000000", 
+    what_style="bubble_speech_text",
+    show_tail="leftbase")
+
+define K = Character("Kuin",
+    screen="bubble_say", 
+    what_color="#000000", 
+    what_style="bubble_speech_text",
+    show_tail="leftbase")
 
 
 label start:
@@ -26,7 +51,7 @@ label start:
 
     $ emptyDays = 0
 
-    jump Tavern
+    jump JohnWoofStart
 
 label Tavern:
 

@@ -4,7 +4,7 @@ label KuinBadEnding:
     
     "She painstakingly drags herself to one of the tables and you can almost see a dark cloud forming above her head."
     
-    "You are not above being a petty bitch back so you decide why not instigate the sleeping bee."I
+    "You are not above being a petty bitch back so you decide why not instigate the sleeping bee."
 
     "\"HELLO!{w=0.5} :)\""
 
