@@ -2,9 +2,9 @@ label KuinStart:
 
     QB "Good Afternoon servant of this establishment."
 
-    "\"Umm... hi there!\""
+    "\"Umm.{w=0.2}.{w=0.2}.{w=0.2} hi there!\""
 
-    QB "Shall i instruct you on how to proceed? You seem to be inadequate."
+    QB "Shall i instruct you on how to proceed?{w=0.5} You seem to be inadequate."
 
     menu:
 
@@ -18,13 +18,13 @@ label KuinStart:
 
 label KuinPeculiar:
 
-    "\"What?... No its just your way of speech was a bit... peculiar.\"" 
+    "\"What?.{w=0.2}.{w=0.2}.{w=0.2} No its just your way of speech was a bit.{w=0.2}.{w=0.2}.{w=0.2} peculiar.\"" 
 
     "\"What will it be?\""
 
-    QB "Good, now that we reached an understanding you shall only adress me as \"Your Majesty\"."
+    QB "Good,{w=0.2} now that we reached an understanding you shall only adress me as \"Your Majesty\"."
 
-    QB "For starters, a latte with two pumps of pure gluten free honey will do."
+    QB "For starters,{w=0.2} a latte with two pumps of pure gluten free honey will do."
 
     menu:
 
@@ -42,9 +42,9 @@ label KuinWish:
 
     "\"As you wish...\""
 
-    QB "Excuse me you seem to enjoy a life of servitude. So tell me... am i SOO wrong for wishing the best for my hive??!!"
+    QB "Excuse me you seem to enjoy a life of servitude.{w=0.5} So tell me.{w=0.2}.{w=0.2}.{w=0.2} am i SOO wrong for wishing the best for my hive??!!"
     
-    QB "All it takes is just a littleeee overtime. which is basically asking nothing right?!RIGHT?!"
+    QB "All it takes is just a littleeee overtime.{w=0.5} which is basically asking nothing right?!RIGHT?!"
 
     menu:
 
@@ -58,7 +58,7 @@ label KuinWish:
 
 label KuinSilent:
 
-    QB "EXACTLY! All i do is for the greater good!"
+    QB "EXACTLY!{w=0.5} All i do is for the greater good!"
 
     QB "YES...the greater good...ALL WE NEED IS TO WIN THE COMPETITION AND THEN ALL IS GONNA BE OKAY!"
 
@@ -132,15 +132,15 @@ label KuinCompetion:
 
     if kuinCompetion:
 
-        "\"Competition? What competition?\""
+        "\"Competition?{w=0.5} What competition?\""
 
-        QB "THE BEST BEE HIVE COMPETITION WHAT ELSE COULD I BEE TALKING ABOUT?! And you bet your  beeswax that we are gonna produce the most honey in bee hive history!!"
+        QB "THE BEST BEE HIVE COMPETITION WHAT ELSE COULD I BEE TALKING ABOUT?!{w=0.5} And you bet your  beeswax that we are gonna produce the most honey in bee hive history!!"
 
         $ kuinCompetion = True
 
     else:
 
-        QB "Are you deaf? Do I really need to repeat myself?"
+        QB "Are you deaf?{w=0.5} Do I really need to repeat myself?"
 
     jump KuinHoldOn
 
@@ -152,7 +152,7 @@ label KuinBreetany:
 
         QB "Obviously you wouldn't know about that second grade B lister joke of a \"queen\"." 
 
-        QB "We are going against her hive in the finals, some dare say they are our biggest competition."
+        QB "We are going against her hive in the finals,{w=0.2} some dare say they are our biggest competition."
 
         QB "NONSENSE!"
 
@@ -160,7 +160,7 @@ label KuinBreetany:
 
     else:
 
-        QB "Are you deaf? Do I really need to repeat myself?"
+        QB "Are you deaf?{w=0.5} Do I really need to repeat myself?"
 
     jump KuinHoldOn
 
@@ -168,7 +168,7 @@ label KuinWork:
 
     "\"YOU WORK SO HARD FOR THEM!\""
 
-    QB "I DO. I REALLY DO."
+    QB "I DO.{w=0.5} I REALLY DO."
 
     QB "FINALLY someone who appreciates me and my leadership."
 
@@ -176,25 +176,25 @@ label KuinWork:
 
     "\"YAS QUEEN SLAY!\""
 
-    QB "I WILL. I. Always. Do."
+    QB "I WILL.{w=0.5} I.{w=0.5} Always.{w=0.5} Do."
 
     jump Tavern
 
 label KuinOffGuard:
 
-    "\"That's mean! You caught me off guard!!!\""
+    "\"That's mean!{w=0.5} You caught me off guard!!!\""
 
-    QB "Oh honey, you can hardly call it that! You work on a tree for beesake."
+    QB "Oh honey,{w=0.2} you can hardly call it that!{w=0.5} You work on a tree for beesake."
 
-    QB "Good, now that we reached an understanding you shall only adress me as \"Your Majesty\"."
+    QB "Good,{w=0.2} now that we reached an understanding you shall only adress me as \"Your Majesty\"."
 
-    "\"Look, you don't have to bee here if you don't want to.\""
+    "\"Look,{w=0.2} you don't have to bee here if you don't want to.\""
 
     jump KuinNobody
 
 label KuinWhat:
 
-    "\"Excuse me... a what? Are aware of what you're asking??\""
+    "\"Excuse me.{w=0.2}.{w=0.2}.{w=0.2} a what?{w=0.5} Are aware of what you're asking??\""
 
 label KuinNobody:
 
@@ -220,15 +220,15 @@ label KuinRest:
 
 label KuinRight:
 
-    "\"I'm sorry, you're right i was rude.\""
+    "\"I'm sorry,{w=0.2} you're right i was rude.\""
 
 label KuinGreater:
 
     QB "All i do is for the greater good!"
 
-    QB "YES... the greater good... ALL WE NEED IS TO WIN THE COMPETITION AND THEN ALL IS GONNA BE OKAY!"
+    QB "YES.{w=0.2}.{w=0.2}.{w=0.2} the greater good.{w=0.2}.{w=0.2}.{w=0.2} ALL WE NEED IS TO WIN THE COMPETITION AND THEN ALL IS GONNA BE OKAY!"
 
-    QB "They should be worshipping me..... But NOOOOO what do I GET?!"
+    QB "They should be worshipping me...{w=0.2}.{w=0.2}.{w=0.2} But NOOOOO what do I GET?!"
 
     QB "COMPLAINS!"
 
@@ -248,9 +248,9 @@ label KuinNot:
 
     QB "All i do is for the greater good!"
 
-    QB "YES... the greater good... ALL WE NEED IS TO WIN THE COMPETITION AND THEN ALL IS GONNA BE OKAY!"
+    QB "YES.{w=0.2}.{w=0.2}.{w=0.2} the greater good.{w=0.2}.{w=0.2}.{w=0.2} ALL WE NEED IS TO WIN THE COMPETITION AND THEN ALL IS GONNA BE OKAY!"
 
-    QB "They should be worshipping me..... But NOOOOO what do I GET?!"
+    QB "They should be worshipping me...{w=0.2}.{w=0.2}.{w=0.2} But NOOOOO what do I GET?!"
 
     QB "COMPLAINS!"
 
@@ -272,7 +272,7 @@ label KuinTalk:
 
     "\"Um...because...clears throat BECAUSE MY QUEEN THEY WOULD LOVE YOU EVEN MORE!\""
 
-    QB "Ok... i see your point maybe it is worth investing in such frivolous behaviour..."
+    QB "Ok.{w=0.2}.{w=0.2}.{w=0.2} i see your point maybe it is worth investing in such frivolous behaviour..."
 
     "\"YES how WISE of you to let them have fair wages and working schedules!\""
 
@@ -282,7 +282,7 @@ label KuinTalk:
 
     "\"......................yes...\""
 
-    QB "After all, i am just that wise."
+    QB "After all,{w=0.2} i am just that wise."
 
     "\"yes my queen yes.....\""
 
@@ -296,7 +296,7 @@ label KuinChill:
 
     QB "I DONT NEED TO \"CHILL\" I NEED TO WIN!" 
 
-    QB "im gonna show you all.... AND THEN THEY WILL ALL SEE... she will have to see....ANYWAY"
+    QB "im gonna show you all..{w=0.2}.{w=0.2}.{w=0.2} AND THEN THEY WILL ALL SEE.{w=0.2}.{w=0.2}.{w=0.2} she will have to see....ANYWAY"
 
     QB "NOBODY RESTS UNTIL I SAY SO!"
 

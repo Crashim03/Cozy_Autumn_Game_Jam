@@ -46,7 +46,7 @@ label AskHelp:
 
     show john uwu
 
-    J "\"Ah.{w=0.2}.{w=0.2}.{w=0.2} no,{w=0.2} no. I'm fine,{w=0.2} thanks.{w=0.5} Ha ha ha...\""
+    J "\"Ah.{w=0.2}.{w=0.2}.{w=0.2} no,{w=0.2} no.{w=0.5} I'm fine,{w=0.2} thanks.{w=0.5} Ha ha ha...\""
 
     menu:
 

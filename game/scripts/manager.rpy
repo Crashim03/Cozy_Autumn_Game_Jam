@@ -20,10 +20,13 @@ label start:
     $ kuinEndingDone = False
     $ kuinCompetion = False
     $ kuinBreetany = False
+    $ kuinGoodEndingPartIDone = False
+    $ kuinGoodEndingPartIChug = False
+    $ kuinNeutralEndingPartI = False
 
     $ emptyDays = 0
 
-    jump KuinHoldOn
+    jump Tavern
 
 label Tavern:
 
