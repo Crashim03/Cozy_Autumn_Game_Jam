@@ -300,7 +300,7 @@ init python:
 
             if not "show_pos" in kwargs:
                 # Default POS as a list Not tuple
-                kwargs['show_pos'] = list(kwargs.get('show_pos', (800, 400))) 
+                kwargs['show_pos'] = list(kwargs.get('show_pos', (1200, 400))) 
 
                 if args and args[0] is not None:
                     kwargs['show_pos'][0] = args[0]
@@ -309,7 +309,7 @@ init python:
 
             if not "show_tail" in kwargs:
                 # Default tail style
-                kwargs['show_tail'] = 'baseright' 
+                kwargs['show_tail'] = 'baseleft' 
 
                 if len(args) > 2 and args[2] is not None:
                     kwargs['show_tail'] = args[2]

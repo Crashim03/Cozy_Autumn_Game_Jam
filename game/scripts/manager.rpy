@@ -3,32 +3,27 @@
 define F = Character("Croakney",
     screen="bubble_say", 
     what_color="#000000", 
-    what_style="bubble_speech_text",
-    show_tail="leftbase")
+    what_style="bubble_speech_text")
 
 define J = Character("John Woof",
     screen="bubble_say", 
     what_color="#000000", 
-    what_style="bubble_speech_text",
-    show_tail="leftbase")
+    what_style="bubble_speech_text")
 
 define R = Character("Ricardo",
     screen="bubble_say", 
     what_color="#000000", 
-    what_style="bubble_speech_text",
-    show_tail="leftbase")
+    what_style="bubble_speech_text")
 
 define QB = Character("Queen Bee",
     screen="bubble_say", 
     what_color="#000000", 
-    what_style="bubble_speech_text",
-    show_tail="leftbase")
+    what_style="bubble_speech_text")
 
 define K = Character("Kuin",
     screen="bubble_say", 
     what_color="#000000", 
-    what_style="bubble_speech_text",
-    show_tail="leftbase")
+    what_style="bubble_speech_text")
 
 
 label start:
@@ -51,7 +46,7 @@ label start:
 
     $ emptyDays = 0
 
-    jump JohnWoofStart
+    jump Tavern
 
 label Tavern:
 
