@@ -28,6 +28,9 @@ define K = Character("Kuin",
 
 label start:
 
+    $ _game_menu_screen = "pause_menu"
+    $ _main_menu_screen = "menu"
+
     $ day = 1
 
     $ johnEnding = 0

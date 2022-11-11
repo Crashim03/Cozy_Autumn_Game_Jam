@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/characters/kuin/kuinBadEnding.rpy", line 7: expected statement.
-    "You are not above being a petty bitch back so you decide why not instigate the sleeping bee."I
-                                                                                                   ^
+File "game/screens.rpy", line 373: 'navigation' is not a keyword argument or valid child for the textbutton statement.
+    textbutton _("Start") action use navigation
+                                               ^
 
 Ren'Py Version: Ren'Py 8.0.0.22062402
-Fri Nov 11 14:26:05 2022
+Fri Nov 11 19:27:16 2022

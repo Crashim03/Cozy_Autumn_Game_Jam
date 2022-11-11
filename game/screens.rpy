@@ -218,7 +218,7 @@ style choice_button is button
 style choice_button_text is button_text
 
 style choice_vbox:
-    xalign 0.5
+    xalign 0.8
     ypos 405
     yanchor 0.5
 
@@ -229,52 +229,6 @@ style choice_button is default:
 
 style choice_button_text is default:
     properties gui.button_text_properties("choice_button")
-
-
-## Quick Menu screen ###########################################################
-##
-## The quick menu is displayed in-game to provide easy access to the out-of-game
-## menus.
-
-screen quick_menu():
-
-    ## Ensure this appears on top of other screens.
-    zorder 100
-
-    if quick_menu:
-
-        hbox:
-            style_prefix "quick"
-
-            xalign 0.5
-            yalign 1.0
-
-            textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
-
-
-## This code ensures that the quick_menu screen is displayed in-game, whenever
-## the player has not explicitly hidden the interface.
-init python:
-    config.overlay_screens.append("quick_menu")
-
-default quick_menu = True
-
-style quick_button is default
-style quick_button_text is button_text
-
-style quick_button:
-    properties gui.button_properties("quick_button")
-
-style quick_button_text:
-    properties gui.button_text_properties("quick_button")
-
 
 ################################################################################
 ## Main and Game Menu Screens
@@ -292,7 +246,7 @@ screen navigation():
 
         spacing gui.navigation_spacing
 
-        if renpy.get_screen("main_menu"):
+        if renpy.get_screen("menu"):
 
             xalign gui.navigation_xpos
             yalign 0.9
@@ -359,6 +313,16 @@ style navigation_button_text:
 
 screen main_menu():
 
+    tag menu
+
+    add gui.main_menu_background
+
+    frame:
+        style "main_menu_frame"
+
+    textbutton _("Start") action ShowMenu("menu")
+
+screen menu():
     ## This ensures that any other menu screen is replaced.
     tag menu
 
@@ -383,6 +347,21 @@ screen main_menu():
             text "[config.version]":
                 style "main_menu_version"
 
+screen pause_menu():
+    tag menu
+
+    #add images/pause_menu
+    
+    vbox:
+        pos (0.5, 0.5)
+        anchor (0.5, 0.5)
+        textbutton _("Continue") action Return()
+        textbutton _("Save Game") action ShowMenu("save")
+        textbutton _("Load Game") action ShowMenu("load")
+        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("Main Menu") action MainMenu()
+        textbutton _("Help") action Help()
+        textbutton _("Quit") action Quit()
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox
@@ -478,12 +457,14 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
                     transclude
 
-    use navigation
-
     textbutton _("Return"):
         style "return_button"
+        
+        if not main_menu:
+            action ShowMenu("pause_menu")
 
-        action Return()
+        else:
+            action ShowMenu("menu")
 
     label title
 
@@ -1414,27 +1395,6 @@ style nvl_button_text:
 style pref_vbox:
     variant "medium"
     xsize 675
-
-## Since a mouse may not be present, we replace the quick menu with a version
-## that uses fewer and bigger buttons that are easier to touch.
-screen quick_menu():
-    variant "touch"
-
-    zorder 100
-
-    if quick_menu:
-
-        hbox:
-            style_prefix "quick"
-
-            xalign 0.5
-            yalign 1.0
-
-            textbutton _("Back") action Rollback()
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Menu") action ShowMenu()
-
 
 style window:
     variant "small"
