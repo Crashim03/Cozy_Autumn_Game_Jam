@@ -1,12 +1,29 @@
+# Characters
+
+define F = Character("Croakney", color="#ffffff")
+define J = Character("John Woof", color="#ffffff")
+define R = Character("Ricardo", color="#ffffff")
+define QB = Character("Queen Bee", color="#ffffff")
+
+
 label start:
 
     $ day = 1
+
     $ johnEnding = 0
     $ johnEndingDone = False
-    $ croakneyEnding = 0
-    $ croakneyEnding = False
 
-    jump Tavern
+    $ croakneyEnding = 0
+    $ croakneyEndingDone = False
+
+    $ kuinEnding = 0
+    $ kuinEndingDone = False
+    $ kuinCompetion = False
+    $ kuinBreetany = False
+
+    $ emptyDays = 0
+
+    jump KuinHoldOn
 
 label Tavern:
 

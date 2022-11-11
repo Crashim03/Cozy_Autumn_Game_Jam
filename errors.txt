@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-The label start is defined twice, at File "game/scripts/start.rpyc", line 1:
-
-and File "game/start.rpy", line 1:
-
-
+File "game/scripts/characters/kuin/kuin.rpy", line 93: expected menuitem
+    if kuinEnding == 1:
+    ^
 
 Ren'Py Version: Ren'Py 8.0.0.22062402
-Fri Nov  4 16:42:38 2022
+Fri Nov 11 00:09:05 2022

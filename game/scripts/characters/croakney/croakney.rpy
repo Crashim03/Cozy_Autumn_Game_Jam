@@ -1,8 +1,6 @@
-define F = Character("Croakney", color="#ffffff")
-
 label CroakneyStart:
 
-    "You start staring at a frog wearing about a pound of makeup but, for some reason, she's still putting on more with a worried look on her face."
+    "You stare at a frog wearing about a pound of makeup but, for some reason, she's still putting on more with a worried look on her face."
 
     "She realizes she's being watched and turns to you looking displeased."
 
@@ -23,20 +21,22 @@ label CroakneyStart:
     menu:
 
         "\"I can only help you with your order.\"":
+
             jump CroakneyHelpOrder
 
         "\"What solution can I serve you with your order?\"":
+
             jump CroakneySolution
 
 label CroakneyHelpOrder:
 
     "\"Miss... I can only help you with your order. What are you going to have today?\""
 
-    "The Frog gasps shocked at your lack of interest. She sulks pouting."
+    "Croakney gasps shocked at your lack of interest. She sulks pouting."
 
     "Since she keeps locking eyes with you, you decide to server her a fly mousse you had in the fridge."
 
-    "When the Frog realizes what you just did, she dramatically shoves the bowl almost throwing it to the ground"
+    "When T realizes what you just did, she dramatically shoves the bowl almost throwing it to the ground"
 
     F "\"ARE YOU TRYING TO MAKE MYY DAY EVEN WORSE?! IT'S ALREADY TOUGH ENOUGH WITH MY HUBBIE AND NOW YOU DO THIIIIS?!\""
 
@@ -46,7 +46,7 @@ label CroakneyHelpOrder:
 
             jump CroakneyLove1
 
-        "\"Miss, if you keep up with this behaviour, I'll have to ask you to leave.\""
+        "\"Miss, if you keep up with this behaviour, I'll have to ask you to leave.\"":
 
             jump CroakneyLove2
 
@@ -64,13 +64,13 @@ label CroakneyLove2:
 
     "\"Miss, if you keep up with this behaviour, I'll have to ask you to leave.\""
 
-    "The Frog completely ignores you and continues with her rambling."
+    "Croakney completely ignores you and continues with her rambling."
 
     jump CroakneyLove
 
 label CroakneySolution:
 
-    "You sigh."
+    "{i}sigh{/i}"
 
     "\"What solution can I serve you with your order?\""
 
@@ -115,15 +115,15 @@ label CroakneyIUnderstand:
 
     F "\"Sure honeeey... Give me a Diet Croak pleaseee.\""
 
-    "Once you present her the drink, the Frog immediately grabs it with her tongue dragging it to her. She drinks a bit and places the glass back on the counter."
+    "Once you present her the drink, Croakney immediately grabs it with her tongue dragging it to her. She drinks a bit and places the glass back on the counter."
 
 label CroakneyLove:
 
-    "She sighs."
+    F "{i}sigh{/i}"
 
     F "\"Oh my sweet, sweet Ricardo...I LOVEEE HIM SO MUCH! But...\""
     
-    "The Frog stops looking embarassed"
+    "Croakney stops looking embarassed"
 
     F "\"Sometimes I almost can't contain myself and the urge of consuming him in very unpleasant ways grows inside of me...\""
     
@@ -173,11 +173,11 @@ label CroakneyFrailHeart:
 
     F "\"FINEEE!\""
 
-    "The Frog rolls her eyes and sighs."
+    "Croakney rolls her eyes and sighs."
 
     F "\"It is for the best...\""
 
-    croakneyEnding = 2
+    $ croakneyEnding = 2
 
     jump CroakneyEnd
 
@@ -199,7 +199,7 @@ label CroakneySubstitutes:
 
     "Croakney chugs the rest of her Diet Croak and leaves, thanking you with a smile on her face."
 
-    croakneyEnding = 1
+    $ croakneyEnding = 1
 
     jump CroakneyEnd
 
@@ -209,7 +209,7 @@ label CroakneyKnowEachOther:
     
     "\"If your relationship as lasted as long as it has, you sure will surprass the rest of your differences and everything will be fine in end.\""
 
-    croakneyEnding = 3
+    $ croakneyEnding = 3
 
     jump CroakneyEnd
 

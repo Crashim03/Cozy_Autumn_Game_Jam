@@ -1,29 +1,34 @@
-﻿define J = Character("John Woof", color="#ffffff")
-
-label JohnWoofStart:
+﻿label JohnWoofStart:
 
     scene bg
 
     show john charisma at truecenter
     with dissolve
 
-    J "\"Hi!{w=0.5} I'd like some dog food please!\""
+    "\"Hello,{w=0.2} what would you like to order?\""
 
-    "\"Sure!{w=0.5} Here.\""
+    J "Hi!{w=0.5} I'd like some dog food please!"
 
-    J "\"Thanks\""
+    "\"Sure!\""
 
-    J "\".{w=0.2}.{w=0.2}.{w=0.2}\""
+    "..."
 
-    J "\"From the look on your face I can tell that you don't know me.\""
+    "\"Here!\""
 
-    J "\"I'm John Woof,{w=0.2} you can follow my account: @totallynotahuman_woofwoof.\""
+    J "Thanks"
+
+    "..."
+
+    J "From the look on your face I can tell that you don't know me."
+
+    J "I'm John Woof,{w=0.2} you can follow my account: @totallynotahuman_woofwoof."
 
     "\"Ah.{w=0.2}.{w=0.2}.{w=0.2} Thanks.\""
 
-    "John proceeds to sit on one of the chairs.{w=0.5}You notice that he's really struggling to eat his food."
-
-    "You approach him with curiosity."
+    "You go back to the counter.{w=0.5} You notice that he's really struggling to eat his food."
+    
+    "You approach him again with curiosity."
+    
 
     menu:
 
@@ -41,7 +46,7 @@ label AskHelp:
 
     show john uwu
 
-    J "\"Ah.{w=0.2}.{w=0.2}.{w=0.2} no,{w=0.2} no.{w=0.5} I'm fine,{w=0.2} thanks.{w=0.5} Ha ha ha...\""
+    J "\"Ah.{w=0.2}.{w=0.2}.{w=0.2} no,{w=0.2} no. I'm fine,{w=0.2} thanks.{w=0.5} Ha ha ha...\""
 
     menu:
 
